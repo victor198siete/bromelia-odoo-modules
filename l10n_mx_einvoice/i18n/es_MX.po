@@ -1,0 +1,1552 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* l10n_mx_einvoice
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 9.0c\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-06-10 03:28+0000\n"
+"PO-Revision-Date: 2016-06-10 03:28+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_res_partner_vat
+msgid "TIN"
+msgstr "RFC"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_params_pac_method_type
+msgid "Acción"
+msgstr "Acción"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_res_company_facturae_certificate_active
+msgid "Active"
+msgstr "Activo"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_params_pac_active
+msgid "Activo"
+msgstr "Activo"
+
+#. module: l10n_mx_einvoice
+#: code:addons/l10n_mx_einvoice/account_invoice.py:773
+#, python-format
+msgid "Advertencia !!\n"
+"No ha definido dirección de emisión..."
+msgstr "Advertencia !!\n"
+"No ha definido dirección de emisión..."
+
+#. module: l10n_mx_einvoice
+#: code:addons/l10n_mx_einvoice/account_invoice.py:777
+#, python-format
+msgid "Advertencia !!\n"
+"No ha definido el RFC de la Compañía..."
+msgstr "Advertencia !!\n"
+"No ha definido el RFC de la Compañía..."
+
+#. module: l10n_mx_einvoice
+#: code:addons/l10n_mx_einvoice/account_invoice.py:883
+#, python-format
+msgid "Advertencia !!\n"
+"No ha definido el RFC para la Empresa [%s] !"
+msgstr "Advertencia !!\n"
+"No ha definido el RFC para la Empresa [%s] !"
+
+#. module: l10n_mx_einvoice
+#: code:addons/l10n_mx_einvoice/account_invoice.py:775
+#, python-format
+msgid "Advertencia !!\n"
+"No ha definido la dirección de la Compañía..."
+msgstr "Advertencia !!\n"
+"No ha definido la dirección de la Compañía..."
+
+#. module: l10n_mx_einvoice
+#: code:addons/l10n_mx_einvoice/account_invoice.py:1400
+#, python-format
+msgid "Advertencia !!!\n"
+"Revise que su plantilla de correo esté asignada al Serivor de correo %s.\n"
+"También revise que tenga asignado el reporte a usar.\n"
+"La plantilla está asociada a la misma Compañía"
+msgstr "Advertencia !!!\n"
+"Revise que su plantilla de correo esté asignada al Serivor de correo %s.\n"
+"También revise que tenga asignado el reporte a usar.\n"
+"La plantilla está asociada a la misma Compañía"
+
+#. module: l10n_mx_einvoice
+#: code:addons/l10n_mx_einvoice/account_invoice.py:691
+#, python-format
+msgid "Advertencia !!! \n"
+"No existe el archivo [%s]. !"
+msgstr "Advertencia !!! \n"
+"No existe el archivo [%s]. !"
+
+#. module: l10n_mx_einvoice
+#: code:addons/l10n_mx_einvoice/account_invoice.py:688
+#, python-format
+msgid "Advertencia !!! \n"
+"No se tiene definido fname_xslt"
+msgstr "Advertencia !!! \n"
+"No se tiene definido fname_xslt"
+
+#. module: l10n_mx_einvoice
+#: code:addons/l10n_mx_einvoice/account_invoice.py:695
+#, python-format
+msgid "Advertencia !!! \n"
+"Revise la fecha de la factura contra la vigencia del Certificado y que el Certificado se encuentre activo.\n"
+"%s!"
+msgstr "Advertencia !!! \n"
+"Revise la fecha de la factura contra la vigencia del Certificado y que el Certificado se encuentre activo.\n"
+"%s!"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_account_invoice_amount_to_text
+msgid "Amount of the invoice in letter"
+msgstr "Amount of the invoice in letter"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_account_invoice_amount_to_text
+msgid "Amount to Text"
+msgstr "Amount to Text"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_ir_sequence_approval_id_5505
+msgid "Approval Current"
+msgstr "Approval Current"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_ir_sequence_approval_approval_number
+msgid "Approval Number"
+msgstr "Approval Number"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_ir_sequence_approval_id_5505
+msgid "Approval active in this sequence"
+msgstr "Approval active in this sequence"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_ir_sequence_approval_ids
+msgid "Approvals in this Sequence"
+msgstr "Approvals in this Sequence"
+
+#. module: l10n_mx_einvoice
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.ir_sequence_form_inh_l10n_mx_facturae
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.view_facturae_ir_sequence_approval_form
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.view_facturae_ir_sequence_approval_tree
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.view_facturae_sequence_search
+msgid "Aprobaciones"
+msgstr "Aprobaciones"
+
+#. module: l10n_mx_einvoice
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.account_invoice_form_l10n_mx_einvoice
+msgid "Archivos"
+msgstr "Archivos"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model,name:l10n_mx_einvoice.model_res_partner_bank
+msgid "Bank Accounts"
+msgstr "Cuentas bancarias"
+
+#. module: l10n_mx_einvoice
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.account_invoice_form_l10n_mx_einvoice
+msgid "CFDI Info"
+msgstr "CFDI Info"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_account_invoice_cfdi_pac
+msgid "CFDI Pac"
+msgstr "CFDI Pac"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_account_invoice_cfdi_cadena_original
+msgid "Cadena Original"
+msgstr "Cadena Original"
+
+#. module: l10n_mx_einvoice
+#: code:addons/l10n_mx_einvoice/account_invoice.py:84
+#, python-format
+msgid "Can't recode the string [%s] in the letter [%s]"
+msgstr "Can't recode the string [%s] in the letter [%s]"
+
+#. module: l10n_mx_einvoice
+#: selection:account.invoice,cfdi_state:0
+msgid "Cancelado"
+msgstr "Cancelado"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_account_invoice_certificado
+msgid "Certificado"
+msgstr "Certificado"
+
+#. module: l10n_mx_einvoice
+#: model:ir.actions.act_window,name:l10n_mx_einvoice.action_res_company_facturae_certificate_tree
+#: model:ir.ui.menu,name:l10n_mx_einvoice.menu_res_company_facturae_certificate
+msgid "Certificados CFDI"
+msgstr "Certificados CFDI"
+
+#. module: l10n_mx_einvoice
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.view_res_company_form_inh_l10n_mx_facturae
+msgid "Certificados SAT"
+msgstr "Certificados SAT"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_res_company_certificate_id
+msgid "Certificate Current"
+msgstr "Certificate Current"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_res_company_facturae_certificate_certificate_file
+msgid "Certificate File"
+msgstr "Certificate File"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_res_company_facturae_certificate_certificate_file_pem
+msgid "Certificate File PEM"
+msgstr "Certificate File PEM"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_res_company_facturae_certificate_certificate_key_file
+msgid "Certificate Key File"
+msgstr "Certificate Key File"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_res_company_facturae_certificate_certificate_key_file_pem
+msgid "Certificate Key File PEM"
+msgstr "Certificate Key File PEM"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_res_company_facturae_certificate_certificate_pfx_file
+msgid "Certificate PFX"
+msgstr "Certificate PFX"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_res_company_facturae_certificate_certificate_password
+msgid "Certificate Password"
+msgstr "Certificate Password"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_account_invoice_certificado
+msgid "Certificate used in the invoice"
+msgstr "Certificate used in the invoice"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_res_company_certificate_ids
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.view_res_company_facturae_certificate_form
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.view_res_company_facturae_certificate_search
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.view_res_company_facturae_certificate_tree
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.view_res_company_form_inh_l10n_mx_facturae
+msgid "Certificates"
+msgstr "Certificates"
+
+#. module: l10n_mx_einvoice
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.view_res_company_facturae_certificate_form
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.view_res_company_form_inh_l10n_mx_facturae
+msgid "Certificates DER FORMAT (Original)"
+msgstr "Certificates DER FORMAT (Original)"
+
+#. module: l10n_mx_einvoice
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.view_res_company_facturae_certificate_form
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.view_res_company_form_inh_l10n_mx_facturae
+msgid "Certificates PEM FORMAT (Transformed)"
+msgstr "Certificates PEM FORMAT (Transformed)"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_res_company_certificate_ids
+msgid "Certificates configurated in this company"
+msgstr "Certificates configurated in this company"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_res_partner_bank_clabe
+msgid "Clabe Interbancaria"
+msgstr "Clabe Interbancaria"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_pay_method_sat_code_id
+msgid "Clave SAT"
+msgstr "Clave SAT"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model,name:l10n_mx_einvoice.model_res_company
+msgid "Companies"
+msgstr "Compañías"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_ir_sequence_approval_company_id
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_report_multicompany_company_id
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_res_company_facturae_certificate_company_id
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.view_facturae_sequence_search
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.view_params_pac_search
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.view_report_multicompany_search
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.view_res_company_facturae_certificate_search
+msgid "Company"
+msgstr "Compañía"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_ir_sequence_approval_company_id
+msgid "Company where will add this approval"
+msgstr "Company where will add this approval"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_res_company_facturae_certificate_company_id
+msgid "Company where you add this certificate"
+msgstr "Company where you add this certificate"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_params_pac_company_id
+msgid "Compañía"
+msgstr "Compañía"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_account_invoice_company_emitter_id
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_account_journal_company2_id
+msgid "Compañía Emisora"
+msgstr "Compañía Emisora"
+
+#. module: l10n_mx_einvoice
+#: model:ir.ui.menu,name:l10n_mx_einvoice.report_multicompany_menu
+msgid "Config Reportes Multicompañía"
+msgstr "Config Reportes Multicompañía"
+
+#. module: l10n_mx_einvoice
+#: model:ir.ui.menu,name:l10n_mx_einvoice.menu_cfdi_config
+msgid "Config. CFDI"
+msgstr "Config. CFDI"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_account_invoice_xml_file_signed_index
+msgid "Contenido del Archivo XML final (después de timbrado y Addendas)"
+msgstr "Contenido del Archivo XML final (después de timbrado y Addendas)"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_account_invoice_xml_file_no_sign_index
+msgid "Contenido del Archivo XML que se manda a Timbrar al PAC"
+msgstr "Contenido del Archivo XML que se manda a Timbrar al PAC"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_params_pac_password
+msgid "Contraseña"
+msgstr "Contraseña"
+
+#. module: l10n_mx_einvoice
+#: selection:account.invoice,cfdi_state:0
+msgid "Correo enviado"
+msgstr "Correo enviado"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_ir_sequence_approval_create_uid
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_params_pac_create_uid
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_pay_method_create_uid
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_regimen_fiscal_create_uid
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_report_multicompany_create_uid
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_res_company_facturae_certificate_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_ir_sequence_approval_create_date
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_params_pac_create_date
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_pay_method_create_date
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_regimen_fiscal_create_date
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_report_multicompany_create_date
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_res_company_facturae_certificate_create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_account_invoice_acc_payment
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_purchase_order_acc_payment
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_sale_order_acc_payment
+msgid "Cuenta Bancaria"
+msgstr "Cuenta Bancaria"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_res_partner_bank_currency2_id
+msgid "Currency2"
+msgstr "Currency2"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_account_invoice_cadena_original
+msgid "Data stream with the information contained in the electronic invoice"
+msgstr "Data stream with the information contained in the electronic invoice"
+
+#. module: l10n_mx_einvoice
+#: model:res.groups,comment:l10n_mx_einvoice.group_date_invoice_l10n_mx_facturae
+#: model:res.groups,name:l10n_mx_einvoice.group_date_invoice_l10n_mx_facturae
+msgid "Date"
+msgstr "Date"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_res_company_facturae_certificate_date_start
+msgid "Date             start the certificate before the SAT"
+msgstr "Date             start the certificate before the SAT"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_account_invoice_invoice_datetime
+msgid "Date Electronic Invoiced "
+msgstr "Fecha Factura Electrónica"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_res_company_facturae_certificate_date_end
+msgid "Date End"
+msgstr "Fecha final"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_account_invoice_date_invoice_tz
+msgid "Date Invoiced with TZ"
+msgstr "Fecha Timbrado con TZ"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_res_company_facturae_certificate_date_start
+msgid "Date Start"
+msgstr "Fecha inicial"
+
+#. module: l10n_mx_einvoice
+#: model:res.groups,comment:l10n_mx_einvoice.group_datetime_invoice_l10n_mx_facturae
+msgid "Date Time"
+msgstr "Fecha/Hora"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_res_company_facturae_certificate_date_end
+msgid "Date end of             validity of the certificate"
+msgstr "Fecha final             vigencia del Certificado"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_account_invoice_date_invoice_tz
+msgid "Date of Invoice with Time Zone"
+msgstr "Fecha Factura con TZ"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_account_invoice_cfdi_fecha_timbrado
+msgid "Date when is stamped the electronic invoice"
+msgstr "Fecha Timbrado"
+
+#. module: l10n_mx_einvoice
+#: model:res.groups,name:l10n_mx_einvoice.group_datetime_invoice_l10n_mx_facturae
+msgid "DateTime"
+msgstr "Fecha/Hora"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_regimen_fiscal_description
+msgid "Descripcion"
+msgstr "Descripcion"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_pay_method_description
+msgid "Descripción"
+msgstr "Descripción"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_params_pac_name
+msgid "Descripción para esta acción del PAC..."
+msgstr "Descripción para esta acción del PAC..."
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_account_invoice_sello
+msgid "Digital Stamp"
+msgstr "Sello Digital"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_account_invoice_address_issued_id
+msgid "Dirección Emisión"
+msgstr "Dirección Emisión"
+
+#. module: l10n_mx_einvoice
+#: code:addons/l10n_mx_einvoice/account_invoice.py:1088
+#, python-format
+msgid "Dirección Incompleta!\n"
+"Revise que la dirección de la compañía este completa (Ciudad, Localidad, Estado, País)"
+msgstr "Dirección Incompleta!\n"
+"Revise que la dirección de la compañía este completa (Ciudad, Localidad, Estado, País)"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_account_journal_address_invoice_company_id
+msgid "Dirección de la Compañía"
+msgstr "Dirección de la Compañía"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_facturae_certificate_library_display_name
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_ir_sequence_approval_display_name
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_params_pac_display_name
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_pay_method_display_name
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_regimen_fiscal_display_name
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_report_multicompany_display_name
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_res_company_facturae_certificate_display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: l10n_mx_einvoice
+#: sql_constraint:pay.method:0
+msgid "El nombre del Método de Pago debe ser único !"
+msgstr "El nombre del Método de Pago debe ser único !"
+
+#. module: l10n_mx_einvoice
+#: code:addons/l10n_mx_einvoice/ir_sequence.py:53
+#, python-format
+msgid "Error ! There ranges of numbers underhand between approvals."
+msgstr "Error ! El rango se traslapa con otro."
+
+#. module: l10n_mx_einvoice
+#: code:addons/l10n_mx_einvoice/account_invoice.py:632
+#, python-format
+msgid "Error !!! \n"
+"El archivo de la llave (KEY) del Certificado no existe en formato PEM"
+msgstr "Error !!! \n"
+"El archivo de la llave (KEY) del Certificado no existe en formato PEM"
+
+#. module: l10n_mx_einvoice
+#: code:addons/l10n_mx_einvoice/account_invoice.py:622
+#, python-format
+msgid "Error !!! \n"
+"El archivo del Certificado no existe en formato PEM"
+msgstr "Error !!! \n"
+"El archivo del Certificado no existe en formato PEM"
+
+#. module: l10n_mx_einvoice
+#: code:addons/l10n_mx_einvoice/account_invoice.py:663
+#, python-format
+msgid "Error !!! \n"
+"El archivo del Certificado no existe en formato PFX"
+msgstr "Error !!! \n"
+"El archivo del Certificado no existe en formato PFX"
+
+#. module: l10n_mx_einvoice
+#: code:addons/l10n_mx_einvoice/account_invoice.py:1125
+#, python-format
+msgid "Error al validar la estructura del xml !!!\n"
+" Validación de XML versión %s:\n"
+"%s"
+msgstr "Error al validar la estructura del xml !!!\n"
+" Validación de XML versión %s:\n"
+"%s"
+
+#. module: l10n_mx_einvoice
+#: code:addons/l10n_mx_einvoice/account_invoice.py:1186
+#, python-format
+msgid "Error en Certiicado !!!\n"
+"No puedo obtener el Certificado del Comprobante. Revise su configuración.\n"
+"%s"
+msgstr "Error en Certiicado !!!\n"
+"No puedo obtener el Certificado del Comprobante. Revise su configuración.\n"
+"%s"
+
+#. module: l10n_mx_einvoice
+#: code:addons/l10n_mx_einvoice/account_invoice.py:1167
+#, python-format
+msgid "Error en Folio !!!\n"
+"No puedo obtener el Folio del Comprobante. Antes de generar poder generar el XML debe tener la factura Abierta.\n"
+"%s"
+msgstr "Error en Folio !!!\n"
+"No puedo obtener el Folio del Comprobante. Antes de generar poder generar el XML debe tener la factura Abierta.\n"
+"%s"
+
+#. module: l10n_mx_einvoice
+#: code:addons/l10n_mx_einvoice/account_invoice.py:1180
+#, python-format
+msgid "Error en Número de Certiicado !!!\n"
+"No puedo obtener el Número de Certificado del Comprobante. Revise su configuración.\n"
+"%s"
+msgstr "Error en Número de Certiicado !!!\n"
+"No puedo obtener el Número de Certificado del Comprobante. Revise su configuración.\n"
+"%s"
+
+#. module: l10n_mx_einvoice
+#: code:addons/l10n_mx_einvoice/account_invoice.py:1172
+#, python-format
+msgid "Error en Sello !!!\n"
+"No puedo generar el Sello del Comprobante. Revise su configuración.\n"
+"%s"
+msgstr "Error en Sello !!!\n"
+"No puedo generar el Sello del Comprobante. Revise su configuración.\n"
+"%s"
+
+#. module: l10n_mx_einvoice
+#: code:addons/l10n_mx_einvoice/account_invoice.py:1164
+#, python-format
+msgid "Error en la Cadena Original !!!\n"
+"No puedo obtener la Cadena Original del Comprobante. Revise su configuración.\n"
+"%s"
+msgstr "Error en la Cadena Original !!!\n"
+"No puedo obtener la Cadena Original del Comprobante. Revise su configuración.\n"
+"%s"
+
+#. module: l10n_mx_einvoice
+#: code:addons/l10n_mx_einvoice/facturae_lib.py:179
+#: code:addons/l10n_mx_einvoice/facturae_lib.py:209
+#: code:addons/l10n_mx_einvoice/facturae_lib.py:252
+#: code:addons/l10n_mx_einvoice/facturae_lib.py:329
+#: code:addons/l10n_mx_einvoice/facturae_lib.py:361
+#, python-format
+msgid "Error!"
+msgstr "Error!"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_account_invoice_cfdi_state
+msgid "Estado CFDI"
+msgstr "Estado CFDI"
+
+#. module: l10n_mx_einvoice
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.account_invoice_form_l10n_mx_einvoice
+msgid "Estado Timbrado"
+msgstr "Estado Timbrado"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_account_invoice_cfdi_state
+msgid "Estado del Proceso para generar el Comprobante Fiscal"
+msgstr "Estado del Proceso para generar el Comprobante Fiscal"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_res_company_l10n_mx_street3
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_res_partner_l10n_mx_street3
+msgid "External number of the partner address"
+msgstr "External number of the partner address"
+
+#. module: l10n_mx_einvoice
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.view_res_company_facturae_certificate_form
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.view_res_company_form_inh_l10n_mx_facturae
+msgid "Extra Information"
+msgstr "Información extra"
+
+#. module: l10n_mx_einvoice
+#: model:ir.module.category,name:l10n_mx_einvoice.module_l10n_mx_facturae
+msgid "Facturación Electrónica de México"
+msgstr "Facturación Electrónica de México"
+
+#. module: l10n_mx_einvoice
+#: code:addons/l10n_mx_einvoice/facturae_lib.py:180
+#: code:addons/l10n_mx_einvoice/facturae_lib.py:210
+#: code:addons/l10n_mx_einvoice/facturae_lib.py:253
+#: code:addons/l10n_mx_einvoice/facturae_lib.py:330
+#: code:addons/l10n_mx_einvoice/facturae_lib.py:362
+#, python-format
+msgid "Failed to find in path '%s' app. This app is required for sign Mexican Electronic Invoice"
+msgstr "Failed to find in path '%s' app. This app is required for sign Mexican Electronic Invoice"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_account_invoice_cfdi_fecha_cancelacion
+msgid "Fecha Cancelación"
+msgstr "Fecha Cancelación"
+
+#. module: l10n_mx_einvoice
+#: model:ir.module.category,name:l10n_mx_einvoice.module_date_invoice_l10n_mx_facturae
+msgid "Fecha FacturaE"
+msgstr "Fecha FacturaE"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_account_invoice_cfdi_fecha_timbrado
+msgid "Fecha Timbrado"
+msgstr "Fecha Timbrado"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_account_invoice_cfdi_fecha_cancelacion
+msgid "Fecha cuando la factura es Cancelada"
+msgstr "Fecha cuando la factura es Cancelada"
+
+#. module: l10n_mx_einvoice
+#: code:addons/l10n_mx_einvoice/account_invoice.py:1074
+#, python-format
+msgid "Fecha de Factura vacía!\n"
+"No es posible obtener la información sin la fecha, asegúrese que el Estado de la factura no es Borrador o que la Fecha Factura se encuentre vacía"
+msgstr "Fecha de Factura vacía!\n"
+"No es posible obtener la información sin la fecha, asegúrese que el Estado de la factura no es Borrador o que la Fecha Factura se encuentre vacía"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_account_invoice_fname_invoice
+msgid "File Name Invoice"
+msgstr "File Name Invoice"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_res_company_facturae_certificate_fname_xslt
+msgid "File XML Parser (.xslt)"
+msgstr "File XML Parser (.xslt)"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_ir_sequence_approval_number_end
+msgid "Finished Number of folios purchased"
+msgstr "Finished Number of folios purchased"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_res_company_facturae_certificate_fname_xslt
+msgid "Folder in server with XSLT file"
+msgstr "Folder in server with XSLT file"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_account_invoice_cfdi_folio_fiscal
+msgid "Folio Fiscal (UUID)"
+msgstr "Folio Fiscal (UUID)"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_account_invoice_cfdi_folio_fiscal
+msgid "Folio Fiscal del Comprobante CFDI, también llamado UUID"
+msgstr "Folio Fiscal del Comprobante CFDI, también llamado UUID"
+
+#. module: l10n_mx_einvoice
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.view_res_company_form_inh_l10n_mx_facturae
+msgid "For Invoice Serial, access to sequence of Sale Journal."
+msgstr "For Invoice Serial, access to sequence of Sale Journal."
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_ir_sequence_approval_number_start
+msgid "From"
+msgstr "De"
+
+#. module: l10n_mx_einvoice
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.view_res_company_facturae_certificate_form
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.view_res_company_form_inh_l10n_mx_facturae
+msgid "General Information of Certificate"
+msgstr "General Information of Certificate"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_params_pac_certificate_link
+msgid "Generalmente el PAC tiene un Certificado Público que es necesario para que los clientes puedan revisar la validez del XML y PDF"
+msgstr "Generalmente el PAC tiene un Certificado Público que es necesario para que los clientes puedan revisar la validez del XML y PDF"
+
+#. module: l10n_mx_einvoice
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.view_facturae_sequence_search
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.view_params_pac_search
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.view_report_multicompany_search
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.view_res_company_facturae_certificate_search
+msgid "Group By..."
+msgstr "Agrupar por..."
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_facturae_certificate_library_id
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_ir_sequence_approval_id
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_params_pac_id
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_pay_method_id
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_regimen_fiscal_id
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_report_multicompany_id
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_res_company_facturae_certificate_id
+msgid "ID"
+msgstr "ID"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_params_pac_parametro
+msgid "ID Equipo"
+msgstr "ID Equipo"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_params_pac_parametro
+msgid "ID Equipo para el Webservice usado para la acción del PAC..."
+msgstr "ID Equipo para el Webservice usado para la acción del PAC..."
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_account_invoice_certificate_id
+msgid "Id of the certificate used for the invoice"
+msgstr "Id of the certificate used for the invoice"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_account_invoice_cfdi_cbb
+msgid "Imagen Código Bidimensional"
+msgstr "Imagen Código Bidimensional"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_res_company_address_invoice_parent_company_id
+msgid "In this field should         placed the address of the parent company , independently if         handled a scheme Multi-company o Multi-Address."
+msgstr "In this field should         placed the address of the parent company , independently if         handled a scheme Multi-company o Multi-Address."
+
+#. module: l10n_mx_einvoice
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.view_params_pac_search
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.view_res_company_facturae_certificate_search
+msgid "Inactive"
+msgstr "Inactivo"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_res_company_facturae_certificate_active
+msgid "Indicate if this certificate             is active"
+msgstr "Indicate if this certificate             is active"
+
+#. module: l10n_mx_einvoice
+#: model:ir.module.category,description:l10n_mx_einvoice.module_date_invoice_l10n_mx_facturae
+msgid "Indicate tue type of date that need was colocated in the invoice"
+msgstr "Indicate tue type of date that need was colocated in the invoice"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_purchase_order_pay_method_id
+msgid "Indicates the Payment Method to use when Paying Vendor Invoice"
+msgstr "Indicates the Payment Method to use when Paying Vendor Invoice"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_sale_order_pay_method_id
+msgid "Indicates the way it was paid or will be paid the invoice,             where the options could be: check, bank transfer, reservoir in             account bank, credit card, cash etc. If not know as will be paid             the invoice, leave empty and the XML show “Unidentified”."
+msgstr "Indicates the way it was paid or will be paid the invoice,             where the options could be: check, bank transfer, reservoir in             account bank, credit card, cash etc. If not know as will be paid             the invoice, leave empty and the XML show “Unidentified”."
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_res_partner_pay_method_id
+msgid "Indicates the way it was paid or will be paid the invoice,             where the options could be: check, wire transfer, reservoir in             account bank, credit card, cash etc. If you do not know how it will be             paid, leave it empty and the XML show “Unidentified”."
+msgstr "Indicates the way it was paid or will be paid the invoice,             where the options could be: check, wire transfer, reservoir in             account bank, credit card, cash etc. If you do not know how it will be             paid, leave it empty and the XML show “Unidentified”."
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_account_invoice_pay_method_id
+msgid "Indicates the way it was paid or will be paid the invoice,            where the options could be: check, bank transfer, reservoir in             account bank, credit card, cash etc. If not know as will be             paid the invoice, leave empty and the XML show “Unidentified”."
+msgstr "Indicates the way it was paid or will be paid the invoice,            where the options could be: check, bank transfer, reservoir in             account bank, credit card, cash etc. If not know as will be             paid the invoice, leave empty and the XML show “Unidentified”."
+
+#. module: l10n_mx_einvoice
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.account_invoice_form_l10n_mx_einvoice
+msgid "Información de Timbrado"
+msgstr "Información de Timbrado"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_ir_sequence_approval_number_start
+msgid "Initial range of folios purchased"
+msgstr "Initial range of folios purchased"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_res_company_l10n_mx_street4
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_res_partner_l10n_mx_street4
+msgid "Internal number of the partner address"
+msgstr "Internal number of the partner address"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model,name:l10n_mx_einvoice.model_account_invoice
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_account_invoice_certificate_id
+msgid "Invoice Certificate"
+msgstr "Invoice Certificate"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_res_company_address_invoice_parent_company_id
+msgid "Invoice Company Address Parent"
+msgstr "Dirección de la Compañía Padre"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_res_company_invoice_out_refund_sequence_id
+msgid "Invoice Out Refund Sequence"
+msgstr "Secuencia Nota de Crédito"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_res_company_invoice_out_sequence_id
+msgid "Invoice Out Sequence"
+msgstr "Secuencia Factura"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_account_invoice_invoice_sequence_id
+msgid "Invoice Sequence"
+msgstr "Secuencia Factura"
+
+#. module: l10n_mx_einvoice
+#: code:addons/l10n_mx_einvoice/account_invoice.py:390
+#: code:addons/l10n_mx_einvoice/account_invoice.py:392
+#, python-format
+msgid "Invoice dates should be equal"
+msgstr "Las fechas deben ser iguales"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_sale_order_acc_payment
+msgid "Is             the account with which the client pays the invoice, if not know             which account will used for pay leave empty and the XML will show             \"Unidentified\"."
+msgstr "Is             the account with which the client pays the invoice, if not know             which account will used for pay leave empty and the XML will show             \"Unidentified\"."
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_account_invoice_acc_payment
+msgid "Is the account with which the client pays the invoice,             if not know which account will used for pay leave empty and             the XML will show \"“Unidentified”\"."
+msgstr "Is the account with which the client pays the invoice,             if not know which account will used for pay leave empty and             the XML will show \"“Unidentified”\"."
+
+#. module: l10n_mx_einvoice
+#: model:ir.model,name:l10n_mx_einvoice.model_account_journal
+msgid "Journal"
+msgstr "Diario"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_account_invoice_invoice_datetime
+msgid "Keep empty to use the current date"
+msgstr "Mantenga vacío para usar la fecha actual"
+
+#. module: l10n_mx_einvoice
+#: code:addons/l10n_mx_einvoice/account_invoice.py:437
+#, python-format
+msgid "La Empresa - (ID: %s) %s - no está definida como Compañía, para usarlo en Facturas, es necesario que la defina como Compañía..."
+msgstr "La Empresa - (ID: %s) %s - no está definida como Compañía, para usarlo en Facturas, es necesario que la defina como Compañía..."
+
+#. module: l10n_mx_einvoice
+#: code:addons/l10n_mx_einvoice/account_invoice.py:442
+#, python-format
+msgid "La Empresa - (ID: %s) %s - no tiene el RFC definido, por favor revise..."
+msgstr "La Empresa - (ID: %s) %s - no tiene el RFC definido, por favor revise..."
+
+#. module: l10n_mx_einvoice
+#: code:addons/l10n_mx_einvoice/account_invoice.py:440
+#, python-format
+msgid "La Empresa - (ID: %s) %s - tiene la dirección incompleta, por favor verifique..."
+msgstr "La Empresa - (ID: %s) %s - tiene la dirección incompleta, por favor verifique..."
+
+#. module: l10n_mx_einvoice
+#: sql_constraint:pay.method:0
+msgid "La clave del Método de Pago debe ser único !"
+msgstr "La clave del Método de Pago debe ser único !"
+
+#. module: l10n_mx_einvoice
+#: code:addons/l10n_mx_einvoice/account_invoice.py:1397
+#, python-format
+msgid "La factura fue enviada exitosamente por correo electrónico..."
+msgstr "La factura fue enviada exitosamente por correo electrónico..."
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_account_invoice_cfdi_last_message
+msgid "Last Message"
+msgstr "Último Mensaje"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_facturae_certificate_library___last_update
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_ir_sequence_approval___last_update
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_params_pac___last_update
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_pay_method___last_update
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_regimen_fiscal___last_update
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_report_multicompany___last_update
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_res_company_facturae_certificate___last_update
+msgid "Last Modified on"
+msgstr "Última Modifiación en"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_ir_sequence_approval_write_uid
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_params_pac_write_uid
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_pay_method_write_uid
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_regimen_fiscal_write_uid
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_report_multicompany_write_uid
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_res_company_facturae_certificate_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización de"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_ir_sequence_approval_write_date
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_params_pac_write_date
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_pay_method_write_date
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_regimen_fiscal_write_date
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_report_multicompany_write_date
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_res_company_facturae_certificate_write_date
+msgid "Last Updated on"
+msgstr "Última actualización en"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_params_pac_certificate_link
+msgid "Liga al Certificado"
+msgstr "Liga al Certificado"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_res_company_l10n_mx_city2
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_res_partner_l10n_mx_city2
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.res_partner_inherit_form_view_l10n_mx
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.view_res_company_form_inh_l10n_mx_facturae
+msgid "Locality"
+msgstr "Localidad"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_res_company_l10n_mx_city2
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_res_partner_l10n_mx_city2
+msgid "Locality configurated for this partner"
+msgstr "Localidad configurada para esta empresa"
+
+#. module: l10n_mx_einvoice
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.account_invoice_form_l10n_mx_einvoice
+msgid "Log Timbrado"
+msgstr "Log Timbrado"
+
+#. module: l10n_mx_einvoice
+#: model:res.groups,name:l10n_mx_einvoice.group_l10n_mx_facturae_manager
+msgid "Manager"
+msgstr "Responsable"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_account_invoice_cfdi_last_message
+msgid "Message generated to upload XML to sign"
+msgstr "Message generated to upload XML to sign"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_report_multicompany_model
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.view_report_multicompany_search
+msgid "Model"
+msgstr "Modelo"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_account_invoice_pay_method_id
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_pay_method_name
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_purchase_order_pay_method_id
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_sale_order_pay_method_id
+msgid "Método de Pago"
+msgstr "Método de Pago"
+
+#. module: l10n_mx_einvoice
+#: model:ir.actions.act_window,name:l10n_mx_einvoice.action_pay_method
+#: model:ir.ui.menu,name:l10n_mx_einvoice.cfdi_metodos_pago
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.view_pay_method_form
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.view_pay_method_tree
+msgid "Métodos de Pago"
+msgstr "Métodos de Pago"
+
+#. module: l10n_mx_einvoice
+#: model:ir.actions.act_window,name:l10n_mx_einvoice.eaccount_peymeths_action
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.eaccount_paymeths_form
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.eaccount_paymeths_seach
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.eaccount_paymeths_tree
+msgid "Métodos de pago SAT"
+msgstr "Métodos de pago SAT"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_ir_sequence_approval_approval_year
+msgid "Name"
+msgstr "Nombre"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_ir_sequence_approval_approval_number
+msgid "Name of the type of Electronic Invoice to configure"
+msgstr "Name of the type of Electronic Invoice to configure"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_account_invoice_fname_invoice
+msgid "Name used for the XML of electronic invoice"
+msgstr "Name used for the XML of electronic invoice"
+
+#. module: l10n_mx_einvoice
+#: code:addons/l10n_mx_einvoice/account_invoice.py:253
+#, python-format
+msgid "No puede regresar la Factura o Nota de Crédito a borrador porque ya se encuentra timbrada y posteriormente se canceló el Timbre. Duplique la factura para poder timbrarla nuevamente"
+msgstr "No puede regresar la Factura o Nota de Crédito a borrador porque ya se encuentra timbrada y posteriormente se canceló el Timbre. Duplique la factura para poder timbrarla nuevamente"
+
+#. module: l10n_mx_einvoice
+#: code:addons/l10n_mx_einvoice/account_invoice.py:1281
+#, python-format
+msgid "No se encontró el Driver del PAC para %s"
+msgstr "No se encontró el Driver del PAC para %s"
+
+#. module: l10n_mx_einvoice
+#: code:addons/l10n_mx_einvoice/account_invoice.py:1402
+#, python-format
+msgid "No se encontró el reporte de la factura !!!\n"
+"Revise la configuración"
+msgstr "No se encontró el reporte de la factura !!!\n"
+"Revise la configuración"
+
+#. module: l10n_mx_einvoice
+#: code:addons/l10n_mx_einvoice/account_invoice.py:1091
+#, python-format
+msgid "No se tiene definido el Régimen Fiscal para la Compañía que está emitiendo la factura."
+msgstr "No se tiene definido el Régimen Fiscal para la Compañía que está emitiendo la factura."
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_account_invoice_cfdi_no_certificado
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_account_invoice_no_certificado
+msgid "No. Certificado"
+msgstr "No. Certificado"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_res_company_l10n_mx_street3
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_res_partner_l10n_mx_street3
+msgid "No. External"
+msgstr "No. External"
+
+#. module: l10n_mx_einvoice
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.res_partner_inherit_form_view_l10n_mx
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.view_res_company_form_inh_l10n_mx_facturae
+msgid "No. External..."
+msgstr "No. External..."
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_res_company_l10n_mx_street4
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_res_partner_l10n_mx_street4
+msgid "No. Internal"
+msgstr "No. Interno"
+
+#. module: l10n_mx_einvoice
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.res_partner_inherit_form_view_l10n_mx
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.view_res_company_form_inh_l10n_mx_facturae
+msgid "No. Internal..."
+msgstr "No. Interno..."
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_params_pac_name
+msgid "Nombre"
+msgstr "Nombre"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_account_invoice_no_certificado
+msgid "Number of serie of certificate used for the invoice"
+msgstr "Number of serie of certificate used for the invoice"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_res_company_facturae_certificate_serial_number
+msgid "Number of serie of the certificate"
+msgstr "Número de Serie del Certificado"
+
+#. module: l10n_mx_einvoice
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.account_invoice_tree_l10n_mx_einvoice
+msgid "Número Factura"
+msgstr "Número Factura"
+
+#. module: l10n_mx_einvoice
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.view_res_company_form_inh_l10n_mx_facturae
+msgid "Obtener Info de Certificado"
+msgstr "Obtener Info de Certificado"
+
+#. module: l10n_mx_einvoice
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.view_res_company_facturae_certificate_form
+msgid "Obtener Info del Certificado"
+msgstr "Obtener Info del Certificado"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_account_invoice_cfdi_cadena_original
+msgid "Original String used in the electronic invoice"
+msgstr "Original String used in the electronic invoice"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_ir_sequence_approval_type
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_ir_sequence_approval_type
+msgid "PAC"
+msgstr "PAC"
+
+#. module: l10n_mx_einvoice
+#: selection:ir.sequence.approval,type:0
+msgid "PAC SIFEI"
+msgstr "PAC SIFEI"
+
+#. module: l10n_mx_einvoice
+#: selection:params.pac,method_type:0
+msgid "PAC SIFEI - CANCELAR"
+msgstr "PAC SIFEI - CANCELAR"
+
+#. module: l10n_mx_einvoice
+#: selection:params.pac,method_type:0
+msgid "PAC SIFEI - TIMBRAR"
+msgstr "PAC SIFEI - TIMBRAR"
+
+#. module: l10n_mx_einvoice
+#: model:ir.ui.menu,name:l10n_mx_einvoice.menu_params_pac
+msgid "PACS"
+msgstr "PACS"
+
+#. module: l10n_mx_einvoice
+#: selection:account.invoice,cfdi_state:0
+msgid "PDF"
+msgstr "PDF"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_account_invoice_pac_id
+msgid "Pac"
+msgstr "Pac"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_account_invoice_pac_id
+msgid "Pac usado para Timbrar la Factura"
+msgstr "Pac usado para Timbrar la Factura"
+
+#. module: l10n_mx_einvoice
+#: model:ir.actions.act_window,name:l10n_mx_einvoice.action_params_pac
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.view_params_pac_form
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.view_params_pac_search
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.view_params_pac_tree
+msgid "Parameters PAC"
+msgstr "Parameters PAC"
+
+#. module: l10n_mx_einvoice
+#: code:addons/l10n_mx_einvoice/account_invoice.py:109
+#, python-format
+msgid "Parece que tiene mal configurado el Diario de Ventas ya que no definió la secuencia para las Notas de Crédito"
+msgstr "Parece que tiene mal configurado el Diario de Ventas ya que no definió la secuencia para las Notas de Crédito"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model,name:l10n_mx_einvoice.model_res_partner
+msgid "Partner"
+msgstr "Partner"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_res_partner_pay_method_id
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.view_res_company_inherit_bank_form
+msgid "Payment Method"
+msgstr "Método de Pago"
+
+#. module: l10n_mx_einvoice
+#: selection:account.invoice,cfdi_state:0
+msgid "Pendiente"
+msgstr "Pendiente"
+
+#. module: l10n_mx_einvoice
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.account_invoice_form_l10n_mx_einvoice
+msgid "Procesar"
+msgstr "Procesar"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model,name:l10n_mx_einvoice.model_purchase_order
+msgid "Purchase Order"
+msgstr "Orden de Compra"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_res_partner_bank_reference
+msgid "Reference"
+msgstr "Referencia"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_res_partner_bank_reference
+msgid "Reference used in this bank"
+msgstr "Reference used in this bank"
+
+#. module: l10n_mx_einvoice
+#: model:ir.actions.act_window,name:l10n_mx_einvoice.action_regimen_fiscal
+#: model:ir.model,name:l10n_mx_einvoice.model_regimen_fiscal
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_regimen_fiscal_name
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.view_regimen_fiscal_form
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.view_regimen_fiscal_tree
+msgid "Regimen Fiscal"
+msgstr "Regimen Fiscal"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_res_partner_vat_split
+msgid "Remove the prefix of the country of the VAT"
+msgstr "Remove the prefix of the country of the VAT"
+
+#. module: l10n_mx_einvoice
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.report_multicompany_form_view
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.report_multicompany_tree_view
+msgid "Report Multicompany"
+msgstr "Report Multicompany"
+
+#. module: l10n_mx_einvoice
+#: model:ir.actions.act_window,name:l10n_mx_einvoice.report_multicompany_list_action
+msgid "Report Multicompany Settings"
+msgstr "Report Multicompany Settings"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_report_multicompany_report_name
+msgid "Report Name"
+msgstr "Nombre del Informe"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_report_multicompany_report_id
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.view_report_multicompany_search
+msgid "Report Template"
+msgstr "Report Template"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_res_partner_regimen_fiscal_id
+#: model:ir.ui.menu,name:l10n_mx_einvoice.cfdi_regimen_fiscal
+msgid "Régimen Fiscal"
+msgstr "Régimen Fiscal"
+
+#. module: l10n_mx_einvoice
+#: selection:account.invoice,cfdi_pac:0
+msgid "SIFEI - https://www.sifei.com.mx"
+msgstr "SIFEI - https://www.sifei.com.mx"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model,name:l10n_mx_einvoice.model_sale_order
+msgid "Sales Order"
+msgstr "Pedido de venta"
+
+#. module: l10n_mx_einvoice
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.view_report_multicompany_search
+msgid "Search Report Multicompany"
+msgstr "Search Report Multicompany"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_params_pac_sequence
+msgid "Secuencia"
+msgstr "Secuencia"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_account_invoice_cfdi_sello
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_account_invoice_sello
+msgid "Sello"
+msgstr "Sello"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_ir_sequence_approval_sequence_id
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_report_multicompany_sequence
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.view_facturae_sequence_search
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.view_params_pac_search
+msgid "Sequence"
+msgstr "Secuencia"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_account_invoice_invoice_sequence_id
+msgid "Sequence used in the invoice"
+msgstr "Sequence used in the invoice"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_ir_sequence_approval_sequence_id
+msgid "Sequence where will add this approval"
+msgstr "Sequence where will add this approval"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_ir_sequence_approval_ids
+msgid "Sequences"
+msgstr "Sequences"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_res_company_facturae_certificate_serial_number
+msgid "Serial Number"
+msgstr "Nº de serie"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_account_invoice_cfdi_no_certificado
+msgid "Serial Number of the Certificate"
+msgstr "Serial Number of the Certificate"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_res_company_certificate_id
+msgid "Serial Number of the certificate active and inside of dates in this company"
+msgstr "Serial Number of the certificate active and inside of dates in this company"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_ir_sequence_approval_serie
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.view_facturae_sequence_search
+msgid "Serie"
+msgstr "Serie"
+
+#. module: l10n_mx_einvoice
+#: model:ir.ui.view,arch_db:l10n_mx_einvoice.ir_sequence_form_inh_l10n_mx_facturae
+msgid "Serie SAT"
+msgstr "Serie SAT"
+
+#. module: l10n_mx_einvoice
+#: model:ir.actions.act_window,name:l10n_mx_einvoice.action_facturae_sequence_tree
+#: model:ir.ui.menu,name:l10n_mx_einvoice.menu_facturae_sequence
+msgid "Series de Facturas"
+msgstr "Series de Facturas"
+
+#. module: l10n_mx_einvoice
+#: model:res.groups,name:l10n_mx_einvoice.res_group_facturae_show_default_wizards
+msgid "Facturación Electrónica"
+msgstr "Facturación Electrónica"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_account_journal_company2_id
+msgid "Si este campo es capturado, la factura electrónica tomará los datos de la Compañía seleccionada como Compañía emisora del CFDI"
+msgstr "Si este campo es capturado, la factura electrónica tomará los datos de la Compañía seleccionada como Compañía emisora del CFDI"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_account_journal_address_invoice_company_id
+msgid "Si este campo es capturado, la factura electrónica tomará los datos de la dirección del partner seleccionado para generar el CFDI"
+msgstr "Si este campo es capturado, la factura electrónica tomará los datos de la dirección del partner seleccionado para generar el CFDI"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_account_invoice_cfdi_sello
+msgid "Sign assigned by the SAT"
+msgstr "Sign assigned by the SAT"
+
+#. module: l10n_mx_einvoice
+#: code:addons/l10n_mx_einvoice/account_invoice.py:742
+#, python-format
+msgid "Solo puede Timbrar facturas de Clientes"
+msgstr "Solo puede Timbrar facturas de Clientes"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_account_invoice_cadena_original
+msgid "String Original"
+msgstr "String Original"
+
+#. module: l10n_mx_einvoice
+#: sql_constraint:ir.sequence.approval:0
+msgid "The finished number (Until), must be higher to initial (Since)!"
+msgstr "The finished number (Until), must be higher to initial (Since)!"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_res_partner_regimen_fiscal_id
+msgid "The fiscal position will determine taxes and accounts used for the partner."
+msgstr "La posición fiscal determinará los impuestos y las cuentas utilizadas para el socio."
+
+#. module: l10n_mx_einvoice
+#: sql_constraint:ir.sequence.approval:0
+msgid "The initial number (Since), must be less to end (Until)!"
+msgstr "The initial number (Since), must be less to end (Until)!"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_res_company_invoice_out_sequence_id
+msgid "The sequence used for invoice out numbers."
+msgstr "The sequence used for invoice out numbers."
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_res_company_invoice_out_refund_sequence_id
+msgid "The sequence used for invoice out refund numbers."
+msgstr "The sequence used for invoice out refund numbers."
+
+#. module: l10n_mx_einvoice
+#: model:res.groups,comment:l10n_mx_einvoice.group_l10n_mx_facturae_manager
+msgid "The user will have an access to the Electronic Invoice data and configuration"
+msgstr "The user will have an access to the Electronic Invoice data and configuration"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_account_invoice_address_issued_id
+msgid "This address will be used as address that issued for electronic invoice"
+msgstr "This address will be used as address that issued for electronic invoice"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_account_invoice_company_emitter_id
+msgid "This company will be used as emitter company in the electronic invoice"
+msgstr "This company will be used as emitter company in the electronic invoice"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_res_company_facturae_certificate_certificate_file
+msgid "This file .cer is proportionate by the SAT"
+msgstr "This file .cer is proportionate by the SAT"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_res_company_facturae_certificate_certificate_key_file
+msgid "This file .key is             proportionate by the SAT"
+msgstr "This file .key is             proportionate by the SAT"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_res_company_facturae_certificate_certificate_file_pem
+msgid "This file is             generated with the file.cer"
+msgstr "This file is             generated with the file.cer"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_res_company_facturae_certificate_certificate_pfx_file
+msgid "This file is generated with the             certificate *.cer and *.key files"
+msgstr "This file is generated with the             certificate *.cer and *.key files"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_res_company_facturae_certificate_certificate_key_file_pem
+msgid "This file is generated with the             file.key"
+msgstr "This file is generated with the             file.key"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_purchase_order_acc_payment
+msgid "This is the Bank Account used by Vendor to receive Invoice Payments."
+msgstr "This is the Bank Account used by Vendor to receive Invoice Payments."
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_res_company_facturae_certificate_certificate_password
+msgid "This password is             proportionate by the SAT"
+msgstr "This password is             proportionate by the SAT"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_report_multicompany_report_id
+msgid "This report template will be assigned for electronic invoicing in your company"
+msgstr "This report template will be assigned for electronic invoicing in your company"
+
+#. module: l10n_mx_einvoice
+#: model:res.groups,comment:l10n_mx_einvoice.group_l10n_mx_facturae_user
+msgid "This user has limitations to create or modify"
+msgstr "This user has limitations to create or modify"
+
+#. module: l10n_mx_einvoice
+#: selection:account.invoice,cfdi_state:0
+msgid "Timbrado"
+msgstr "Timbrado"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_ir_sequence_approval_number_end
+msgid "To"
+msgstr "A"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_params_pac_url_webservice
+msgid "URL WebService"
+msgstr "URL WebService"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_params_pac_url_webservice
+msgid "URL del WebService usado para la acción del PAC..."
+msgstr "URL del WebService usado para la acción del PAC..."
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_res_partner_bank_last_acc_number
+msgid "Ultimos 4 digitos"
+msgstr "Ultimos 4 digitos"
+
+#. module: l10n_mx_einvoice
+#: model:res.groups,name:l10n_mx_einvoice.group_l10n_mx_facturae_user
+msgid "User"
+msgstr "Usuario"
+
+#. module: l10n_mx_einvoice
+#: model:ir.module.category,description:l10n_mx_einvoice.module_l10n_mx_facturae
+msgid "User:This user has limitations to create or modify.Manager:The user will have an access to the Electronic Invoice data and configuration"
+msgstr "User:This user has limitations to create or modify.Manager:The user will have an access to the Electronic Invoice data and configuration"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_params_pac_user
+msgid "Usuario"
+msgstr "Usuario"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_res_partner_vat_split
+msgid "VAT Split"
+msgstr "VAT Split"
+
+#. module: l10n_mx_einvoice
+#: code:addons/l10n_mx_einvoice/account_invoice.py:84
+#, python-format
+msgid "Warning !"
+msgstr "Warning !"
+
+#. module: l10n_mx_einvoice
+#: code:addons/l10n_mx_einvoice/res_company_facturae_certificate.py:168
+#, python-format
+msgid "Warning!"
+msgstr "Warning!"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_ir_sequence_approval_serie
+msgid "With which report to SAT, example. FA (for Invoices), NC (For Invoice Refund)"
+msgstr "With which report to SAT, example. FA (for Invoices), NC (For Invoice Refund)"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_account_invoice_xml_file_signed_index
+msgid "XML Timbrado"
+msgstr "XML Timbrado"
+
+#. module: l10n_mx_einvoice
+#: selection:account.invoice,cfdi_state:0
+#: model:ir.model.fields,field_description:l10n_mx_einvoice.field_account_invoice_xml_file_no_sign_index
+msgid "XML a Timbrar"
+msgstr "XML a Timbrar"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model.fields,help:l10n_mx_einvoice.field_ir_sequence_approval_approval_year
+msgid "Year of approval from the Certificate"
+msgstr "Year of approval from the Certificate"
+
+#. module: l10n_mx_einvoice
+#: code:addons/l10n_mx_einvoice/res_company_facturae_certificate.py:169
+#, python-format
+msgid "You certificate file, key file or password is incorrect.\n"
+"Verify uppercase and lowercase"
+msgstr "You certificate file, key file or password is incorrect.\n"
+"Verify uppercase and lowercase"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model,name:l10n_mx_einvoice.model_eaccount_payment_methods
+msgid "eaccount.payment.methods"
+msgstr "eaccount.payment.methods"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model,name:l10n_mx_einvoice.model_facturae_certificate_library
+msgid "facturae.certificate.library"
+msgstr "facturae.certificate.library"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model,name:l10n_mx_einvoice.model_ir_sequence
+msgid "ir.sequence"
+msgstr "ir.sequence"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model,name:l10n_mx_einvoice.model_ir_sequence_approval
+msgid "ir.sequence.approval"
+msgstr "ir.sequence.approval"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model,name:l10n_mx_einvoice.model_params_pac
+msgid "params.pac"
+msgstr "params.pac"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model,name:l10n_mx_einvoice.model_pay_method
+msgid "pay.method"
+msgstr "pay.method"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model,name:l10n_mx_einvoice.model_report_multicompany
+msgid "report.multicompany"
+msgstr "report.multicompany"
+
+#. module: l10n_mx_einvoice
+#: model:ir.model,name:l10n_mx_einvoice.model_res_company_facturae_certificate
+msgid "res.company.facturae.certificate"
+msgstr "res.company.facturae.certificate"
+

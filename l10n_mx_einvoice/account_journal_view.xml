@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+
+        <record model="ir.ui.view" id="view_account_journal_view_form_inh_multisuc">
+            <field name="name">view.account.journal.view.form.inh.multisuc</field>
+            <field name="model">account.journal</field>
+            <field name="inherit_id" ref="account.view_account_journal_form"/>
+            <field name="arch" type="xml">
+            <data>
+                <field name="type" position="after">
+                    <field name="use_for_cfdi" attrs="{'invisible': ['|',('type','!=','sale')]}" />
+                </field>
+                <notebook position="inside">
+                    <page string="Config CFDI" attrs="{'invisible': [('use_for_cfdi','=',False)]}">
+                        <group>
+                            <group>
+                                <!--<field name="serie_cfdi_invoice" />
+                                <field name="serie_cfdi_refund" attrs="{'invisible': [('refund_sequence','=',False)]}"/>-->
+                                <field name="report_id" widget='selection' 
+                                       attrs="{'required': [('use_for_cfdi','=',True)]}"
+                                       domain="[('model','=','account.invoice')]"/>
+                                <field name="report_name" />
+                            </group>
+                            <group>
+                                <field name="company2_id" attrs="{'required': [('use_for_cfdi','=',True)]}"/> 
+                                <field name="address_invoice_company_id" attrs="{'required': [('use_for_cfdi','=',True)]}"/> 
+                            </group>
+                        </group>
+                        <group string="Info Certificado Sello Digital" col="4" colspan="4" groups="base.group_no_one,account.group_account_manager">
+                            <field name="certificate_file" attrs="{'required': [('use_for_cfdi','=',True)]}"/>
+                            <field name="certificate_file_pem" />
+                            <field name="certificate_key_file" attrs="{'required': [('use_for_cfdi','=',True)]}"/>
+                            <field name="certificate_key_file_pem" />
+                            <field name="certificate_password" password="True" attrs="{'required': [('use_for_cfdi','=',True)]}"/>
+                            <field name="certificate_pfx_file" />
+                            <field name="serial_number" attrs="{'required': [('use_for_cfdi','=',True)]}"/>
+                            <newline />
+                            <field name="date_start" attrs="{'required': [('use_for_cfdi','=',True)]}"/>
+                            <field name="date_end" attrs="{'required': [('use_for_cfdi','=',True)]}"/>
+                            <field name="fname_xslt" colspan="4"/>
+                        </group>
+
+                    </page>
+                </notebook>
+            </data>
+            </field>
+        </record>
+
+    </data>
+</openerp>

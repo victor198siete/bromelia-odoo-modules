@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="res_company_getcfdicount_wizard" model="ir.ui.view">
+		    <field name="name">res.company.getcfdicount.wizard</field>
+            <field name="model">res.company.getcfdicount</field>
+            <field name="arch" type="xml">
+                <form string="Obtener Conteo de CFDIs consumidos">
+                    <group>
+                        <field name="date" states="step1"/>
+                        <field name="state" invisible="1"/>
+                        <field name="conteo" states="step2"/>
+                    </group>
+                    <footer>
+                        <button type="object" name="get_cfdi_count" 
+                                states="step1"
+                                string="Obtener Timbres Consumidos" class="oe_highlight" colspan="2" />
+                        <button string="Cancel" class="btn-default" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+        
+        <act_window name="Obtener Timbres"
+                    res_model="res.company.getcfdicount"
+                    src_model="res.company"
+                    view_mode="form"
+                    target="new"
+                    key2="client_action_multi"
+                    id="res_company_getcfdicount_wizard_action"/>
+
+
+
+        <record model="ir.ui.view" id="res_company_locality_sat_form">
+            <field name="name">res.company.form.sat.code.locality</field>
+            <field name="model">res.company</field>
+            <field name="inherit_id" ref="base.view_company_form"/>
+            <field name="arch" type="xml">
+                <field name="country_id" position="before">
+                    <field name="locality_sat_id" placeholder="Localidad" class="o_address_city oe_edit_only" options="{'no_create_edit': True,'no_create': True}"/>
+                </field>
+                <field name="street2" position="after">
+                    <field name="zip_sat_id" placeholder="Codigo Postal" class="o_address_zip" required="1" options="{'no_create_edit': True,'no_create': True}"/>
+                    <field name="colonia_sat_id" placeholder="Colonia" class="oe_edit_only" domain="[('zip_sat_code','=',zip_sat_id)]" options="{'no_create_edit': True,'no_create': True}"/>
+                </field>
+                <field name="city" position="replace">
+                    <field name="city" invisible="1" />
+                    <field name="township_sat_id" placeholder="Municipio" class="oe_edit_only" options="{'no_create_edit': True,'no_create': True}"/>
+                </field>
+                <field name="zip" position="replace">
+                    <field name="zip" invisible="1" />
+                </field>
+                <field name="street" position="after">
+                        <div>
+                            <field name="l10n_mx_street3" placeholder="No. Externo..." style="width: 45%;" />
+                            -
+                            <field name="l10n_mx_street4" placeholder="No. Interno..." style="width: 45%;"/>
+                        </div>
+                    </field>
+
+
+                </field>
+            </record> 
+
+
+    </data>
+</openerp>

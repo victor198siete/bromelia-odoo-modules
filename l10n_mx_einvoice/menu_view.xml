@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <menuitem id="menu_cfdi_config" name="Facturación Electrónica" 
+                  parent="account.menu_finance_configuration" sequence="12" 
+                  groups="account.group_account_manager" />
+        
+    </data>
+</openerp>

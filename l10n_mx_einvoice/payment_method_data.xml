@@ -1,0 +1,139 @@
+<?xml version="1.0" ?>
+<openerp>
+    
+    <data noupdate="1" >
+
+    <record id="pay_method_01" model="pay.method">
+                <field name="code">01</field>
+            <field name="name">Efectivo</field>
+            <field name="description">Efectivo</field>
+    </record>
+
+    <record id="pay_method_02" model="pay.method">
+                <field name="code">02</field>
+            <field name="name">Cheque nominativo</field>
+            <field name="description">Cheque</field>
+    </record>
+
+    <record id="pay_method_03" model="pay.method">
+                <field name="code">03</field>
+            <field name="name">Transferencia electrónica de fondos</field>
+            <field name="description">Transferencia</field>
+    </record>
+
+    <record id="pay_method_04" model="pay.method">
+                <field name="code">04</field>
+            <field name="name">Tarjetas de crédito</field>
+            <field name="description">Tarjetas de crédito</field>
+    </record>
+
+    <record id="pay_method_05" model="pay.method">
+                <field name="code">05</field>
+            <field name="name">Monedero electronico</field>
+            <field name="description">Monederos electronicos</field>
+    </record>
+
+    <record id="pay_method_06" model="pay.method">
+                <field name="code">06</field>
+            <field name="name">Dinero electronico</field>
+            <field name="description">Dinero electronico</field>
+    </record>
+
+    <record id="pay_method_08" model="pay.method">
+                <field name="code">08</field>
+            <field name="name">Vales de despensa</field>
+            <field name="description">Vales de despensa</field>
+    </record>
+
+    <record id="pay_method_12" model="pay.method">
+        <field name="code">12</field>
+        <field name="name">Dación en pago</field>
+        <field name="description">Dación en pago</field>
+    </record>
+
+    <record id="pay_method_13" model="pay.method">
+        <field name="code">13</field>
+        <field name="name">Pago por subrogación</field>
+        <field name="description">Pago por subrogación</field>
+    </record>
+
+    <record id="pay_method_14" model="pay.method">
+        <field name="code">14</field>
+        <field name="name">Pago por consignación</field>
+        <field name="description">Pago por consignación</field>
+    </record>
+
+    <record id="pay_method_15" model="pay.method">
+        <field name="code">15</field>
+        <field name="name">Condonación</field>
+        <field name="description">Condonación</field>
+    </record>
+
+    <record id="pay_method_17" model="pay.method">
+        <field name="code">17</field>
+        <field name="name">Compensación</field>
+        <field name="description">Compensación</field>
+    </record>
+
+    <record id="pay_method_23" model="pay.method">
+        <field name="code">23</field>
+        <field name="name">Novación</field>
+        <field name="description">Novación</field>
+    </record>
+
+    <record id="pay_method_24" model="pay.method">
+        <field name="code">24</field>
+        <field name="name">Confusión</field>
+        <field name="description">Confusión</field>
+    </record>
+
+    <record id="pay_method_25" model="pay.method">
+        <field name="code">25</field>
+        <field name="name">Remisión de deuda</field>
+        <field name="description">Remisión de deuda</field>
+    </record>
+
+    <record id="pay_method_26" model="pay.method">
+        <field name="code">26</field>
+        <field name="name">Prescripción o caducidad</field>
+        <field name="description">Prescripción o caducidad</field>
+    </record>
+
+    <record id="pay_method_27" model="pay.method">
+        <field name="code">27</field>
+        <field name="name">A satisfacción del acreedor</field>
+        <field name="description">A satisfacción del acreedor</field>
+    </record>
+
+    <record id="pay_method_28" model="pay.method">
+                <field name="code">28</field>
+            <field name="name">Tarjeta de Débito</field>
+            <field name="description">Tarjeta de Débito</field>
+    </record>
+
+    <record id="pay_method_29" model="pay.method">
+                <field name="code">29</field>
+            <field name="name">Tarjeta de Servicio</field>
+            <field name="description">Servicio</field>
+    </record>
+
+    <record id="pay_method_30" model="pay.method">
+                <field name="code">30</field>
+            <field name="name">Aplicacion de Anticipos</field>
+            <field name="description">Servicio</field>
+    </record>
+
+    <record id="pay_method_99" model="pay.method">
+                <field name="code">99</field>
+            <field name="name">Otros</field>
+            <field name="description">Otros</field>
+    </record>
+
+    <record id="pay_method_NA" model="pay.method">
+                <field name="code">98</field>
+            <field name="name">No Aplica</field>
+            <field name="description">No Aplica</field>
+    </record>
+
+     </data>
+</openerp>

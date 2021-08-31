@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+                    
+
+        <record model="ir.ui.view" id="res_partner_locality_sat_form">
+            <field name="name">res.partner.tree.sat.code.locality</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <field name="state_id" position="attributes">
+                    <attribute name="options">{'no_create_edit': True,'no_create': True}</attribute>
+                </field>
+                <field name="country_id" position="before">
+                    <field name="locality_sat_id" placeholder="Localidad" class="o_address_city oe_edit_only" 
+                           options="{'no_create_edit': True,'no_create': True}"
+                           attrs="{'invisible':[('country_code_rel','!=','MX')]}"/>
+                </field>
+                <field name="street2" position="replace">
+                    <field name="street2" placeholder="Street 2..." class="o_address_street" 
+                           attrs="{'readonly': [('type', '=', 'contact'),('parent_id', '!=', False)], 'invisible':[('country_code_rel','=','MX')]}"/>
+                    <field name="zip_sat_id" placeholder="Codigo Postal" class="o_address_zip" 
+                           options="{'no_create_edit': True,'no_create': True}" 
+                           attrs="{'invisible':[('country_code_rel','!=','MX')]}"/>
+                    <field name="colonia_sat_id" placeholder="Colonia" class="oe_edit_only" 
+                           domain="[('zip_sat_code','=',zip_sat_id)]" 
+                           options="{'no_create_edit': True,'no_create': True}"
+                           attrs="{'invisible':[('country_code_rel','!=','MX')]}"/>
+                </field>
+                <field name="city" position="replace">
+                    <field name="city" placeholder="City" class="o_address_city" 
+                           attrs="{'readonly': [('type', '=', 'contact'),('parent_id', '!=', False)], 'invisible':[('country_code_rel','=','MX')]}"/>
+                    <field name="township_sat_id" placeholder="Municipio" class="o_address_city" 
+                           options="{'no_create_edit': True,'no_create': True}" attrs="{'invisible':[('country_code_rel','!=','MX')]}"/>
+                </field>
+                <field name="zip" position="replace">
+                    <field name="zip" class="o_address_zip" 
+                           attrs="{'readonly': [('type', '=', 'contact'),('parent_id', '!=', False)], 'invisible':[('country_code_rel','=','MX')]}"/>
+                </field>
+                <field name="street" position="after">
+                        <div attrs="{'invisible':[('country_code_rel','!=','MX')]}">
+                            <field name="l10n_mx_street3" placeholder="No. External..." style="width: 45%;" 
+                                   attrs="{'readonly': [('type', '=', 'contact'),('parent_id', '!=', False)]}"/>
+                            -
+                            <field name="l10n_mx_street4" placeholder="No. Internal..." style="width: 45%;" 
+                                   attrs="{'readonly': [('type', '=', 'contact'),('parent_id', '!=', False)]}"/>
+                        </div>
+                    </field>
+
+                </field>
+            </record>
+            
+        <record model="ir.ui.view" id="view_partner_form_inh_xml22">
+            <field name="name">view.partner.form.inh.xml22</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="account.view_partner_property_form"/>
+            <field name="arch" type="xml">
+                <field name="property_account_position_id" position="after">
+                    <!-- <field name="regimen_fiscal_id" widget="selection" groups="account.group_account_manager"/> -->
+                    <field name="regimen_fiscal_id" groups="account.group_account_manager" options="{'no_create_edit': True,'no_create': True}" />
+                    <field name="pay_method_id" widget="selection" groups="account.group_account_manager"/>
+                    <field name="envio_manual_cfdi" />
+                </field>
+            </field>
+        </record>   
+        
+        
+        
+    </data>
+</openerp>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="view_account_config_settings_l10n_mx_einvoice" model="ir.ui.view">
+            <field name="name">account settings l10n_mx_einvoice</field>
+            <field name="model">account.config.settings</field>
+            <field name="inherit_id" ref="account.view_account_config_settings"/>
+            <field name="arch" type="xml">
+                <group name="bank_cash" position="after" >
+                    <separator string="Parámetros PAC" />
+                    
+                    <group name="pac">
+                        <label string="PAC"/>
+                        <div>
+                            <div>
+                                <!--<label for="pac"/>-->
+                                <field name="pac" class="oe_inline" />
+                            </div>
+                        </div>
+                        <label string="Credenciales"/>
+                        <div name="pac1">
+                            <div>
+                                <label for="pac_user"/>
+                                <field name="pac_user" class="oe_inline"/>
+                            </div>
+                            <div name="pac_password">
+                                <label for="pac_password"/>
+                                <field name="pac_password" class="oe_inline" password="1"/>
+                            </div>
+                        </div>
+                        <label string="Timbrado en Pruebas?"/>
+                        <div>
+                            <div name="pac_testing">
+                                <field name="pac_testing" class="oe_inline"/>
+                                <label string="."/>
+                            </div>
+                        </div>
+                        <label string="Validar Esquema XSD de forma local?"/>
+                        <div>
+                            <div name="validate_schema">
+                                <field name="validate_schema" class="oe_inline"/>
+                                <label string=""/>
+                            </div>
+                        </div>
+                    </group>
+                </group>
+            </field>
+        </record>
+    </data>
+</openerp>

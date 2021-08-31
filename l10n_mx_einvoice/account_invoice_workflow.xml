@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<openerp>
+    <data>
+
+    <!--Inherited the workflow account-->
+        <record id="account.act_open" model="workflow.activity">
+            <field name="action">action_date_assign()
+action_move_create()
+invoice_validate()
+action_get_einvoice()
+</field>
+        </record>
+
+    </data>
+</openerp>

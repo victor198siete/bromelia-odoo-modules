@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="view_partner_bank_clabe_form_inh_xml">
+            <field name="name">view.partner.bank.clabe.form.inh.xml</field>
+            <field name="model">res.partner.bank</field>
+            <field name="inherit_id" ref="base.view_partner_bank_form"/>
+            <field name="arch" type="xml">
+                <field name="company_id" position="after">
+                    <field name="clabe" colspan="2"/>
+                    <field name="currency2_id" colspan="2"/>
+                    <field name="reference" colspan="2"/>
+                </field>
+               <field name="acc_number" position="after">
+                    <field name="last_acc_number" colspan="2"/>
+                </field>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_partner_bank_clabe_tree_inh_xml">
+            <field name="name">view.partner.bank.clabe.form.inh.xml</field>
+            <field name="model">res.partner.bank</field>
+            <field name="inherit_id" ref="base.view_partner_bank_tree"/>
+            <field name="arch" type="xml">
+                <field name="acc_number" position="after">
+                    <field name="last_acc_number" />
+                </field>
+               <field name="bank_name" position="after">
+                    <field name="clabe" colspan="2"/>
+                </field>
+            </field>
+        </record>
+
+        <!-- ### Datos Bancarios en XML  Ger ### -->
+        <record model="ir.ui.view" id="view_inherit_einvoice_res_bank">
+            <field name="name">view.bank.einvoice.mxl</field>
+            <field name="model">res.bank</field>
+            <field name="inherit_id" ref="base.view_res_bank_form"/>
+            <field name="arch" type="xml">
+               <field name="bic" position="after">
+                    <field name="vat" required="1"/>
+                </field>
+            </field>
+        </record>
+        <!-- ### FIN  Ger ### -->
+
+    </data>
+</openerp>
