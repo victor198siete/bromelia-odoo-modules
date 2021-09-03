@@ -31,7 +31,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/l10n_mx_einvoice" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/../../../Comparar/metodosJ7.py" />
   </component>
@@ -53,7 +53,11 @@
       <workItem from="1629405067379" duration="12097000" />
       <workItem from="1629753073722" duration="15299000" />
       <workItem from="1629990006417" duration="12728000" />
-      <workItem from="1630333662296" duration="37972000" />
+      <workItem from="1630333662296" duration="41391000" />
+      <workItem from="1630509922538" duration="119000" />
+      <workItem from="1630510048318" duration="859000" />
+      <workItem from="1630642291450" duration="2169000" />
+      <workItem from="1630647623974" duration="817000" />
     </task>
     <servers />
   </component>
@@ -70,5 +74,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

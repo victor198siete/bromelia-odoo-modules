@@ -1068,74 +1068,74 @@ class AccountInvoice(models.Model):
         TotalImpuestosTrasladados = 0
         TotalImpuestosRetenidos = 0
 
-        # if sat_tipo_factor == 'Exento'
-        # for line_tax_id in invoice.tax_line_ids:
-        #     sat_tipo_factor = line_tax_id.tax_id.sat_tasa_cuota
-        #     sat_code_tax = line_tax_id.tax_id.sat_code_tax
-        #     sat_tasa_cuota = line_tax_id.tax_id.amount
-        #
-        #     tax_name = sat_code_tax
-        #     tax_names.append(tax_name)
-        #     line_tax_id_amount = abs(line_tax_id.amount or 0.0)
-        #     if line_tax_id.amount >= 0:
-        #         impuesto_list = invoice_data_impuestos.setdefault(
-        #                 'cfdi:Traslados', [])
-        #         # impuesto_list = invoice_data_impuestos['cfdi:Traslados']
-        #         impuesto_str = 'cfdi:Traslado'
-        #         TotalImpuestosTrasladados += line_tax_id_amount
-        #         invoice_data['cfdi:Impuestos'].update({
-        #                         'TotalImpuestosTrasladados': "%.2f" % (TotalImpuestosTrasladados)
-        #                         })
-        #     else:
-        #         # impuesto_list = invoice_data_impuestos['Retenciones']
-        #         impuesto_list = invoice_data_impuestos.setdefault(
-        #             'cfdi:Retenciones', [])
-        #         impuesto_str = 'cfdi:Retencion'
-        #         TotalImpuestosRetenidos += line_tax_id_amount
-        #         invoice_data['cfdi:Impuestos'].update({
-        #                         'TotalImpuestosRetenidos': "%.2f" % (TotalImpuestosRetenidos)
-        #                         })
-        #     if abs(sat_tasa_cuota) > 1:
-        #         sat_tasa_cuota = abs(sat_tasa_cuota)/100.0
-        #     if line_tax_id.amount >= 0:
-        #         # print "######## invoice_data['cfdi:Impuestos']",invoice_data['cfdi:Impuestos']
-        #         impuesto_dict = {impuesto_str:
-        #                         {
-        #                         'Impuesto': tax_name,
-        #                         'TipoFactor': sat_tipo_factor,
-        #                         'TasaOCuota': "%.6f" % (sat_tasa_cuota),
-        #                         'Importe': "%.2f" % (line_tax_id_amount),
-        #                          }
-        #                          }
-        #     else:
-        #         impuesto_dict = {impuesto_str:
-        #                         {
-        #                         'Impuesto': tax_name,
-        #                         #'TipoFactor': sat_tipo_factor,
-        #                         #'TasaOCuota': "%.6f" % (sat_tasa_cuota),
-        #                         'Importe': "%.2f" % (line_tax_id_amount),
-        #                          }
-        #                          }
-        #     # if sat_tasa_cuota > 1.1:
-        #     #     sat_tasa_cuota = sat_tasa_cuota/100.0
-        #     # if line_tax_id.amount >= 0:
-        #     #     impuesto_dict = {impuesto_str:
-        #     #                     {
-        #     #                     'Impuesto': tax_name,
-        #     #                     'TipoFactor': sat_tipo_factor,
-        #     #                     'TasaOCuota': "%.6f" % (abs(sat_tasa_cuota)),
-        #     #                     'Importe': "%.2f" % (line_tax_id_amount),
-        #     #                      }
-        #     #                      }
-        #     # else:
-        #     #     impuesto_dict = {impuesto_str:
-        #     #                     {
-        #     #                     'Impuesto': tax_name,
-        #     #                     'Importe': "%.2f" % (line_tax_id_amount),
-        #     #                      }
-        #     #                      }
-        #
-        #     impuesto_list.append(impuesto_dict)
+        if sat_tipo_factor != 'Exento':
+            for line_tax_id in invoice.tax_line_ids:
+                sat_tipo_factor = line_tax_id.tax_id.sat_tasa_cuota
+                sat_code_tax = line_tax_id.tax_id.sat_code_tax
+                sat_tasa_cuota = line_tax_id.tax_id.amount
+
+                tax_name = sat_code_tax
+                tax_names.append(tax_name)
+                line_tax_id_amount = abs(line_tax_id.amount or 0.0)
+                if line_tax_id.amount >= 0:
+                    impuesto_list = invoice_data_impuestos.setdefault(
+                            'cfdi:Traslados', [])
+                    # impuesto_list = invoice_data_impuestos['cfdi:Traslados']
+                    impuesto_str = 'cfdi:Traslado'
+                    TotalImpuestosTrasladados += line_tax_id_amount
+                    invoice_data['cfdi:Impuestos'].update({
+                                    'TotalImpuestosTrasladados': "%.2f" % (TotalImpuestosTrasladados)
+                                    })
+                else:
+                    # impuesto_list = invoice_data_impuestos['Retenciones']
+                    impuesto_list = invoice_data_impuestos.setdefault(
+                        'cfdi:Retenciones', [])
+                    impuesto_str = 'cfdi:Retencion'
+                    TotalImpuestosRetenidos += line_tax_id_amount
+                    invoice_data['cfdi:Impuestos'].update({
+                                    'TotalImpuestosRetenidos': "%.2f" % (TotalImpuestosRetenidos)
+                                    })
+                if abs(sat_tasa_cuota) > 1:
+                    sat_tasa_cuota = abs(sat_tasa_cuota)/100.0
+                if line_tax_id.amount >= 0:
+                    # print "######## invoice_data['cfdi:Impuestos']",invoice_data['cfdi:Impuestos']
+                    impuesto_dict = {impuesto_str:
+                                    {
+                                    'Impuesto': tax_name,
+                                    'TipoFactor': sat_tipo_factor,
+                                    'TasaOCuota': "%.6f" % (sat_tasa_cuota),
+                                    'Importe': "%.2f" % (line_tax_id_amount),
+                                    }
+                                    }
+                else:
+                    impuesto_dict = {impuesto_str:
+                                    {
+                                    'Impuesto': tax_name,
+                                    #'TipoFactor': sat_tipo_factor,
+                                    #'TasaOCuota': "%.6f" % (sat_tasa_cuota),
+                                    'Importe': "%.2f" % (line_tax_id_amount),
+                                    }
+                                    }
+                # if sat_tasa_cuota > 1.1:
+                #     sat_tasa_cuota = sat_tasa_cuota/100.0
+                # if line_tax_id.amount >= 0:
+                #     impuesto_dict = {impuesto_str:
+                #                     {
+                #                     'Impuesto': tax_name,
+                #                     'TipoFactor': sat_tipo_factor,
+                #                     'TasaOCuota': "%.6f" % (abs(sat_tasa_cuota)),
+                #                     'Importe': "%.2f" % (line_tax_id_amount),
+                #                      }
+                #                      }
+                # else:
+                #     impuesto_dict = {impuesto_str:
+                #                     {
+                #                     'Impuesto': tax_name,
+                #                     'Importe': "%.2f" % (line_tax_id_amount),
+                #                      }
+                #                      }
+
+                impuesto_list.append(impuesto_dict)
 
         ########### AGRUPACION ###############
         ## Si Termino podemos recorrerlos y agruparlos
